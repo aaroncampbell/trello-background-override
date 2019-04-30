@@ -1,0 +1,20 @@
+{
+  "name": "Trello: Force Purple Background",
+  "version": "0.0.1",
+  "manifest_version": 2,
+  "description": "Removes image backgrounds and forces a purple background on all Trello boards",
+  "homepage_url": "https://AaronDCampbell.com.com",
+  "permissions": [
+    "https://trello.com/b/*"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "https://trello.com/b/*"
+      ],
+      "js": [
+        "inject.js"
+      ]
+    }
+  ]
+}
